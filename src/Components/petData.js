@@ -14,7 +14,7 @@ export default {
             },
             {
                 "id":"2",
-                "name":"Demo",
+                "petName":"Demo",
                 "petPhoto":demo,
                 "petAge":"Adult",
                 "petBreed":"Tabby/Siamese",
