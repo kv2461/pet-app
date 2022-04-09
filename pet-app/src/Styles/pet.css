@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.petPhotoMain {
+  max-height: 60vh;
+}
+
+.petContainer {
+  padding: 2vh;
+  max-width: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.petInfo {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+
+.petInfo * {
+  padding: 1rem;
+  width: 33%;
+  display: flex;
+  justify-content: center;
+}
