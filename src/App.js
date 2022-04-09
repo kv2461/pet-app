@@ -2,8 +2,15 @@ import React from "react";
 import Header from "./Components/Header";
 import Pet from "./Components/Pet";
 import "./Styles/app.css";
-import ivy from "./Images/ivyPhoto.png"; 
-import demo from "./Images/demoPhoto.png"
+import data from "./Components/petData";
+
+function getCatData(num) {
+    let cat = data.data.cats[num];
+    return cat;
+}
+
+let ivy = getCatData(0);
+let demo = getCatData(1);
 
 export default function App() {
     return (<div>
@@ -11,8 +18,22 @@ export default function App() {
                     <Header />
                  </div>
                 <div>
-                    <Pet petName="Ivy" petPhoto={ivy} petAge="Adult" petBreed="Tortoiseshell" />
-                    <Pet petName="Demo" petPhoto={demo} petAge="Fat" petBreed="Bigboiii"/>
+                    <Pet 
+                    id={ivy.id} 
+                    petName={ivy.petName}
+                    petPhoto={ivy.petPhoto}
+                    petAge={ivy.petAge} 
+                    petBreed={ivy.petBreed} 
+                    petType={ivy.petType}
+                    />
+                    <Pet 
+                    id={demo.id} 
+                    petName={demo.petName}
+                    petPhoto={demo.petPhoto}
+                    petAge={demo.petAge} 
+                    petBreed={demo.petBreed} 
+                    petType={demo.petType}
+                    />
                  </div>
             </div>
     )
