@@ -34,12 +34,12 @@ export default function App() {
                     <Pet 
                     pet = {ivy}
                     />
-                    <Pet 
+                    {/* <Pet 
                     pet = {demo}
                     />
                     <Pet
                     pet = {suki}
-                    />
+                    /> */}
                  </div>
             </div>
     )
